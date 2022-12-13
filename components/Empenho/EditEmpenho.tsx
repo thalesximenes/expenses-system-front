@@ -4,7 +4,8 @@ import { useRouter } from "next/router";
 import React from "react";
 
 const EditEmpenho = (empenhoId: any) => {
-  const EMPENHO_API_BASE_URL = "http://localhost:8080/api/v1/empenhos";
+  const EMPENHO_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/empenhos";
 
   const router = useRouter();
 

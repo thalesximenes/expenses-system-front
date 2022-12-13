@@ -7,7 +7,8 @@ const PagamentoList = ({ pagamento }: any) => {
   const idEmpenhoRouter = router.query.empenhoKey;
   const nrProtocoloDespesa = router.query.nrProtocolo;
 
-  const PAGAMENTO_API_BASE_URL = "http://localhost:8080/api/v1/pagamentos";
+  const PAGAMENTO_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/pagamentos";
 
   const [pagamentos, setPagamentos] = useState<Pagamento[]>([]);
   const [loading, setLoading] = useState(true);

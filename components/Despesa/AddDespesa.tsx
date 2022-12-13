@@ -4,7 +4,8 @@ import { Fragment, useState } from "react";
 import DespesaList from "./DespesaList";
 
 const AddDespesa = () => {
-  const DESPESA_API_BASE_URL = "http://localhost:8080/api/v1/despesas";
+  const DESPESA_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/despesas";
 
   const [isOpen, setIsOpen] = useState(false);
   const [despesa, setDespesa] = useState({

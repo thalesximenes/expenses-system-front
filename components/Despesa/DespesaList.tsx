@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import Despesa from "./Despesa";
 
 const DespesaList = ({ despesa }: any) => {
-  const DESPESA_API_BASE_URL = "http://localhost:8080/api/v1/despesas";
+  const DESPESA_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/despesas";
 
   const [despesas, setDespesas] = useState<Despesa[]>([]);
   const [loading, setLoading] = useState(true);

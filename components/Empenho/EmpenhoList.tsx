@@ -6,7 +6,8 @@ const EmpenhoList = ({ empenho }: any) => {
   const router = useRouter();
   const nrDespesaRouter = router.query.nrProtocolo;
 
-  const EMPENHO_API_BASE_URL = "http://localhost:8080/api/v1/empenhos";
+  const EMPENHO_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/empenhos";
 
   const [empenhos, setEmpenhos] = useState<Empenho[]>([]);
   const [loading, setLoading] = useState(true);

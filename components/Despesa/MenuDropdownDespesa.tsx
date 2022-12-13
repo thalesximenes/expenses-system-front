@@ -6,7 +6,8 @@ import EditDespesa from "./EditDespesa";
 import DeletePopUp from "./DeletePopUp";
 
 const MenuDropdownDespesa = () => {
-  const DESPESA_API_BASE_URL = "http://localhost:8080/api/v1/despesas";
+  const DESPESA_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/despesas";
   const router = useRouter();
   const nrDespesaRouter = router.query.nrProtocolo;
   const [despesaId, setDespesaId] = useState("");

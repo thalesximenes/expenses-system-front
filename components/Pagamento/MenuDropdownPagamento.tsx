@@ -6,7 +6,8 @@ import EditPagamento from "./EditPagamento";
 import DeletePopUp from "./DeletePopUp";
 
 const MenuDropdownPagamento = () => {
-  const PAGAMENTO_API_BASE_URL = "http://localhost:8080/api/v1/pagamentos";
+  const PAGAMENTO_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/pagamentos";
   const router = useRouter();
   const nrDespesaRouter = router.query.nrProtocolo;
   const idEmpenhoRouter = router.query.empenhoKey;

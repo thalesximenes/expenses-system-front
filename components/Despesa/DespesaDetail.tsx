@@ -10,7 +10,8 @@ function addHours(numOfHours: number, dateString: string) {
 }
 
 const DespesaDetail = ({ despesa }: any) => {
-  const DESPESA_API_BASE_URL = "http://localhost:8080/api/v1/despesas";
+  const DESPESA_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/despesas";
 
   const router = useRouter();
   const nrDespesaRouter = router.query.nrProtocolo;

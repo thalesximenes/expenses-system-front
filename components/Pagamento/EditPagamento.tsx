@@ -4,7 +4,8 @@ import { useRouter } from "next/router";
 import React from "react";
 
 const EditPagamento = (pagamentoId: any) => {
-  const PAGAMENTO_API_BASE_URL = "http://localhost:8080/api/v1/pagamentos";
+  const PAGAMENTO_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/pagamentos";
 
   const router = useRouter();
 

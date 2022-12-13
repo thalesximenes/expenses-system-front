@@ -5,7 +5,8 @@ import { Fragment, useState } from "react";
 import EmpenhoList from "./EmpenhoList";
 
 const AddEmpenho = () => {
-  const EMPENHO_API_BASE_URL = "http://localhost:8080/api/v1/empenhos";
+  const EMPENHO_API_BASE_URL =
+    "https://expenses-system-back.herokuapp.com/api/v1/empenhos";
 
   const router = useRouter();
   const nrDespesaRouter = router.query.nrProtocolo;
